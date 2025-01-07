@@ -1,13 +1,62 @@
 <ng-container>
   <section id="app-container">
-    <h1>Welcome to Evans' new portfolio</h1>
-    <p>This site is under construction. Please check back later.</p>
-    <p>Thank you :)</p>
+    <header>
+      <h1>Evans Elabo</h1>
+      <p>🚀 Software Engineer | Specialized in Frontend Engineering 💻</p>
+    </header>
 
-    <p>
-      Copyright &copy; {{ date() }} by
-      <a href="https://linkedin.com/in/eelabo" target="_blank"> Evans Elabo </a>
-    </p>
+    <article>
+      <h2>👋 Welcome!</h2>
+      <p>
+        🚧 This site is currently under construction, chale! But no worries —
+        for now, here’s a little something about me to keep you company. 🎉
+        Check back later for an even cooler experience! 😎
+      </p>
+    </article>
+
+    <article>
+      <h2>📖 About Me</h2>
+      <p>
+        Hey there! I'm Evans Elabo, a passionate software engineer from Ghana
+        who loves building impactful solutions. 💡 I specialize in modern web
+        technologies like
+        <strong>React, NextJs, Angular, TypeScript, SCSS</strong> and many
+        more... . I’m also on a mission to grow the developer community in Ghana
+        by spreading the love for Angular. ❤️
+      </p>
+      <p>
+        When I’m not coding, I’m probably dreaming up ways to make tech more fun
+        and accessible for everyone. 🚀
+      </p>
+    </article>
+
+    <nav>
+      <h2>🌐 Connect with Me</h2>
+      <ul>
+        <li>
+          🔗
+          <a href="https://linkedin.com/in/eelabo" target="_blank"
+            >via LinkedIn</a
+          >
+        </li>
+        <li>📧 <a href="mailto:ellaboevans@gmail.com">via Email</a></li>
+        <li>
+          🌟
+          <a href="https://github.com/ellaboevans" target="_blank"
+            >via GitHub</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p>
+        &copy; {{ date() }} by
+        <a href="https://linkedin.com/in/eelabo" target="_blank">Evans Elabo</a
+        >. 🚀 Made with love ❤️ and code 💻.
+      </p>
+      <p>Thanks for stopping by! 🙌</p>
+    </footer>
   </section>
 </ng-container>
 <router-outlet></router-outlet>
