@@ -68,6 +68,6 @@
 
 @media (width <= 800px) {
   #app-container {
-    width: 80dvw;
+    width: 100%;
   }
 }
