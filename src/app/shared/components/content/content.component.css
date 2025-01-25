@@ -9,6 +9,7 @@
   gap: 2rem;
   flex-direction: column;
   width: 100%;
+  margin-top: 4rem;
 
   .role-container {
     display: flex;
@@ -22,7 +23,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 2rem;
 
     .user-details {
       display: flex;
@@ -99,6 +100,9 @@
 }
 
 @media (max-width: 768px) {
+  #content-wrapper {
+    padding: 2rem 1rem;
+  }
   #user-info-container {
     flex-direction: column;
     align-items: start !important;

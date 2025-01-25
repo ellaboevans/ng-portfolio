@@ -2,16 +2,15 @@
   position: relative;
   user-select: none;
 
-  /* outline: 1px solid red; */
-
   .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--card-bg);
     padding: 0.6rem 1.2rem;
+    width: 38dvw;
     margin: auto;
-    position: sticky;
+    position: fixed;
     top: 1rem;
     right: 0;
     left: 0;
@@ -77,6 +76,14 @@
 
     span {
       font-size: 1rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar-container {
+    .navbar {
+      width: 93dvw;
     }
   }
 }
