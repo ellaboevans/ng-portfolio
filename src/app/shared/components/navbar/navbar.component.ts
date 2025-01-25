@@ -16,7 +16,7 @@ import { BehaviorSubject } from 'rxjs';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarComponent implements OnInit {
-  public isDarkMode = signal<boolean>(false);
+  public isDarkMode = signal<boolean | null>(null);
   public readonly navItems$ = new BehaviorSubject([
     {
       name: 'Home',
@@ -42,8 +42,11 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
     const theme = localStorage.getItem('theme');
-    if (theme) {
+    if (theme === 'dark') {
       document.documentElement.setAttribute('data-theme', theme);
+      this.isDarkMode.update(() => true);
+    } else {
+      this.isDarkMode.update(() => false);
     }
   }
 

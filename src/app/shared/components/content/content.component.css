@@ -56,6 +56,45 @@
       }
     }
   }
+
+  button {
+    background-color: var(--btn-bg-color);
+    border: none;
+    color: white;
+    padding: 0.6rem 0.4rem;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    font-family: var(--rubik-font);
+    text-decoration: none;
+    width: 7rem;
+    margin-block: 2rem;
+
+    a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      img {
+        width: 1.5rem;
+        filter: invert(100%) brightness(0.8);
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      span {
+        font-size: 1rem;
+      }
+    }
+  }
 }
 
 @media (max-width: 768px) {
