@@ -1,0 +1,17 @@
+.status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--badge-bg);
+  border-radius: var(--card-radius);
+  color: var(--badge-text);
+  padding: 0.2rem 0.4rem;
+  font-family: var(--rubik-font);
+}
+
+.status-text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}

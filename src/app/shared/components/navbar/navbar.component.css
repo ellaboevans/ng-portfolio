@@ -1,0 +1,82 @@
+#navbar-container {
+  position: relative;
+  user-select: none;
+
+  /* outline: 1px solid red; */
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--card-bg);
+    padding: 0.6rem 1.2rem;
+    margin: auto;
+    position: sticky;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    border-radius: var(--card-radius);
+    border: 1px solid var(--border-color);
+    box-shadow: var(--card-shadow);
+
+    .navbar-items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      width: 100%;
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #toggler-icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  img {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 50%;
+    background-size: contain;
+    filter: invert(100%) brightness(0.3) contrast(1);
+    padding: 0.2rem;
+    transition: background-color ease 0.3s;
+
+    &:hover {
+      background-color: rgba(71, 70, 70, 0.399);
+      border-radius: var(--nav-hover-radius);
+    }
+  }
+
+  .hire-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    background-color: var(--btn-bg-color);
+    border: none;
+    color: white;
+    padding: 0.3rem 0.4rem;
+    border-radius: var(--btn-radius);
+    cursor: pointer;
+    font-family: var(--rubik-font);
+
+    img {
+      width: 1.5rem;
+      filter: invert(100%) brightness(0.8);
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    span {
+      font-size: 1rem;
+    }
+  }
+}

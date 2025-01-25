@@ -1,0 +1,23 @@
+<header id="navbar-container">
+  <nav class="navbar">
+    <!-- <div class="navbar-items">
+      <a
+        class="nav-item"
+        [routerLink]="item.path"
+        *ngFor="let item of navItems$ | async; trackBy: trackByPath"
+      >
+        <img [src]="item.icon" alt="" />
+      </a>
+    </div> -->
+
+    <div class="navbar-items">
+      <span id="toggler-icon" (click)="toggleTheme()">
+        <img [src]="isDarkMode() ? icons.sun : icons.moon" alt="" />
+      </span>
+      <button class="hire-button">
+        <img src="./assets/icons/plus-circle.svg" alt="" />
+        <span>Hire Me</span>
+      </button>
+    </div>
+  </nav>
+</header>

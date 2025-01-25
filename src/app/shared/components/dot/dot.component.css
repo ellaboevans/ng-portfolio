@@ -1,0 +1,32 @@
+.dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  background-color: var(--dot-color);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.status_dot {
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--badge-dot);
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 var(--badge-dot);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}

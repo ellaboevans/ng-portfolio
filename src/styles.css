@@ -1,1 +1,71 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/fonts/Rubik-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+:root {
+  --btn-radius: 6px;
+  --nav-hover-radius: 72px;
+  --badge-bg: rgba(40, 199, 128, 0.15);
+  --badge-dot: rgba(40, 199, 128, 1);
+  --badge-text: rgb(3, 151, 84);
+  --card-radius: 12px;
+  --card-shadow: rgba(10, 10, 10, 0.06) 0px 1.2px 1.2px 0px,
+    rgba(10, 10, 10, 0.04) 0px 5px 10px;
+  --rubik-font: "Rubik", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html[data-theme="light"] {
+  --bg-color: rgb(240, 240, 240);
+  --btn-bg-color: rgb(20, 20, 20);
+  --role-text-color: rgb(102, 102, 102);
+  --dot-color: rgb(204, 204, 204);
+  --owner-text-color: rgb(55, 55, 55);
+  --owner-desc-text-color: rgb(102, 102, 102);
+  --border-color: rgb(230, 230, 230);
+  --card-bg: rgb(255, 255, 255);
+  --card-inner-bg: rgb(247, 247, 247);
+}
+
+html[data-theme="dark"] {
+  --bg-color: rgb(22, 22, 22);
+  --btn-bg-color: rgb(56, 56, 56);
+  --role-text-color: #c0c0c0;
+  --dot-color: rgb(204, 204, 204);
+  --owner-text-color: rgb(255, 255, 255);
+  --owner-desc-text-color: #c0c0c0;
+  --border-color: rgb(43, 43, 43);
+  --card-bg: rgb(33, 33, 33);
+  --card-inner-bg: rgb(44, 44, 44);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--role-text-color);
+  /* outline: 1px solid red; */
+  min-height: 100dvh;
+  width: 40dvw;
+  max-width: 100dvw;
+  margin: 0 auto;
+  transition: all ease 0.4s;
+  font-family: var(--rubik-font);
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100dvw;
+  }
+}
