@@ -73,4 +73,8 @@ export class NavbarComponent implements OnInit {
       localStorage.setItem('theme', 'light');
     }
   }
+
+  public hireMe(): void {
+    alert('Coming soon!');
+  }
 }
