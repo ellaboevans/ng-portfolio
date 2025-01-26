@@ -38,6 +38,8 @@ html[data-theme="light"] {
   --border-color: rgb(230, 230, 230);
   --card-bg: rgb(255, 255, 255);
   --card-inner-bg: rgb(247, 247, 247);
+  --project-card: rgb(240, 240, 240), rgb(55, 55, 55);
+  --project-card-border: rgb(240, 240, 240);
 }
 
 html[data-theme="dark"] {
@@ -50,6 +52,8 @@ html[data-theme="dark"] {
   --border-color: rgb(43, 43, 43);
   --card-bg: rgb(33, 33, 33);
   --card-inner-bg: rgb(44, 44, 44);
+  --project-card: rgb(55, 55, 55);
+  --project-card-border: rgb(66, 66, 66);
 }
 
 body {
@@ -62,6 +66,11 @@ body {
   margin: 0 auto;
   transition: all ease 0.4s;
   font-family: var(--rubik-font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 @media (max-width: 768px) {

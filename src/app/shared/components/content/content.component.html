@@ -1,7 +1,7 @@
 <section id="content-wrapper">
   <div class="role-container">
     <app-section-heading headingTitle="Software Engineer">
-      <app-dot type="section"></app-dot>
+      <app-dot type="section" />
     </app-section-heading>
     <app-status status="Available" />
   </div>
@@ -27,5 +27,16 @@
       <img src="/assets/images/portfolio-avatar.png" alt="avatar" />
     </div>
   </div>
+  <app-projects>
+    <div class="role-container">
+      <app-section-heading headingTitle="Projects">
+        <app-dot type="section" />
+      </app-section-heading>
+    </div>
+    <!-- Card -->
+    <ng-container *ngFor="let project of project_card(); trackBy: trackProject">
+      <ev-card [cardData]="project" />
+    </ng-container>
+  </app-projects>
 </section>
 <app-footer></app-footer>
