@@ -1,13 +1,5 @@
 #project-wrapper {
   padding: 1.5rem 1rem;
   background-color: var(--card-inner-bg);
-  width: 34dvw;
   border-radius: 12px;
-}
-
-@media (max-width: 768px) {
-  #project-wrapper {
-    width: 100%;
-    margin: 0 auto;
-  }
 }

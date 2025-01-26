@@ -31,7 +31,7 @@ export class ContentComponent {
       name: 'JED Event',
       description: 'Event & Ticketing management platform',
       url: 'https://jed-event.com',
-      image: '/assets/images/portfolio-avatar.png',
+      image: '/assets/images/jed.png',
     },
     {
       id: 2,
@@ -52,11 +52,11 @@ export class ContentComponent {
       name: 'Akoma Homecare & Rehabilitation',
       description: 'Job listing App for an American Company',
       url: 'https://akomahmc.org/',
-      image: '/assets/images/akoma.png',
+      image: '/assets/images/akoma-2.png',
     },
   ]);
 
-  public trackProject(index: number, project: any) {
+  public trackProject(index: number, project: ProjectCardInterface) {
     return project.id;
   }
 }
