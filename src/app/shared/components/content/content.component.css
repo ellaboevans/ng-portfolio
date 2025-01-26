@@ -42,6 +42,10 @@
         font-size: 1.2rem;
         line-height: 1.8rem;
         padding-right: 2rem;
+
+        a {
+          text-decoration: underline;
+        }
       }
     }
 
@@ -49,10 +53,15 @@
       background-color: var(--border-color);
       display: flex;
       align-items: center;
-      padding: 0.5rem;
+      justify-content: center;
+      padding: 0.3rem;
       border-radius: 100%;
+      width: 10rem;
+      height: 10rem;
+      border: 1px solid var(--border-color);
+
       img {
-        width: 9rem;
+        width: 100%;
         background-position: contain;
         object-position: center;
       }
@@ -99,7 +108,8 @@
   }
 }
 
-app-projects, app-footer {
+app-projects,
+app-footer {
   width: 100%;
 }
 
