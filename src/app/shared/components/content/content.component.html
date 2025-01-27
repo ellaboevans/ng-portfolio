@@ -39,8 +39,45 @@
     </div>
     <!-- Card -->
     <ng-container *ngFor="let project of project_card(); trackBy: trackProject">
-      <ev-card [cardData]="project" />
+      <ev-card [cardData]="project">
+        <img src="assets/icons/chevron-right.svg" class="icon" alt="yo" />
+      </ev-card>
     </ng-container>
+  </app-projects>
+  <app-projects>
+    <div class="role-container">
+      <app-section-heading headingTitle="Tech Inhabitants">
+        <app-dot type="section" />
+      </app-section-heading>
+    </div>
+    <!-- Card -->
+    <ng-container
+      *ngFor="let community of community_card(); trackBy: trackProject"
+    >
+      <ev-card [cardData]="community">
+        <img src="assets/icons/arrow-up-right.svg" class="icon" alt="yo" />
+      </ev-card>
+    </ng-container>
+  </app-projects>
+  <div class="connect">
+    <h1>Let’s work together.</h1>
+    <p>Building innovative solutions with machine language.</p>
+  </div>
+  <app-projects>
+    <div class="role-container">
+      <app-section-heading
+        headingTitle="Connect"
+        [ngStyle]="{
+          'font-weight': '500',
+        }"
+      >
+        <app-dot type="status" />
+      </app-section-heading>
+      <div class="social-icons">
+        <a href="https://linkedin.com/in/eelabo" target="_blank"> LinkedIn </a>
+        <a href="https://github.com/ellaboevans" target="_blank"> Github </a>
+      </div>
+    </div>
   </app-projects>
   <app-footer></app-footer>
 </section>

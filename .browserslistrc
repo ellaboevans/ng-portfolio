@@ -12,8 +12,8 @@
 
 # npx browserslist
 
-defaults and fully supports es6-module
-maintained node versions
+# defaults and fully supports es6-module
+# maintained node versions
 last 2 Chrome versions
 last 2 Firefox versions
 last 2 Edge versions

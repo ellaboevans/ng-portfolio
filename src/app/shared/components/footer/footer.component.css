@@ -1,17 +1,25 @@
 #footer-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 10;
-  gap: 0.5rem;
+  gap: 0.4rem;
   padding: 1rem;
   margin-top: 1rem;
-  background-color: var(--card-inner-bg);
+  border-bottom: 1px solid var(--border-color);
   border-radius: var(--card-radius);
   color: var(--owner-text-color);
   font-family: var(--rubik-font);
 
   p {
     text-align: center;
+  }
+
+  small {
+    font-size: 1rem;
+    color: var(--role-text-color);
+    text-align: center;
+    letter-spacing: 0.01rem;
   }
 }
