@@ -125,18 +125,20 @@ app-footer {
   justify-content: center;
   gap: 0.5rem;
   width: 100%;
-  margin-block: 1.4rem;
+  /* margin-block: 3.5rem; */
   text-align: center;
 
   h1 {
     font-size: 2.5rem;
     font-weight: 500;
     color: var(--owner-text-color);
+    margin-top: 4.5rem;
   }
 
   p {
     font-size: 1.2rem;
     line-height: 1.8rem;
+    margin-bottom: 4.5rem;
   }
 }
 
