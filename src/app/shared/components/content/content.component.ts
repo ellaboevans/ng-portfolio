@@ -60,14 +60,14 @@ export class ContentComponent {
     {
       id: 1,
       name: 'AmaliTech',
-      description: 'A global tech and service company based in Europe',
+      description: 'A global tech company based in Europe',
       url: 'https://amalitech.com',
       image: '/assets/images/amalitech.png',
     },
     {
       id: 2,
       name: 'SlightlyTechie Network',
-      description: 'A community of software engineers and students techies',
+      description: 'community of professionals in tech',
       url: 'https://www.slightlytechie.com/',
       image: '/assets/images/st.png',
     },
